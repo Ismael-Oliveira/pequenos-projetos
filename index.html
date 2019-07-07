@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
+    <script src="./assets/js/jspdf.js"></script>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/html2canvas.min.js"></script>
+
     <title>Pequenos Projetos</title>
 </head>
 <body>
@@ -40,11 +44,12 @@
         <div id="edit-1" data-id="1" data-nome="gatilho" class="gatilhoModal">
             <p>Clique aqui para editar esta div.</p>
         </div>
-        
+        <button type="button" class="btn btn-secondary" onclick="genPDF()">Gerar PDF</button>
     </div>        
-
-
+    
+    <!-- <script src="./assets/js/jspdf.js"></script> -->
     <script src="./assets/js/jquery.js"></script>
+    <!-- <script src="./assets/js/html2canvas.min.js"></script> -->
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
