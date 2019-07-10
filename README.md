@@ -11,3 +11,4 @@ Consiste em uma série de pequenos projetos que serão desenvolvidos com o intui
 [Jquery](https://jquery.com/)  
 [jsPDF](https://parall.ax/products/jspdf)  
 [html2canvas](https://html2canvas.hertzen.com/)
+[Drag_Drop](https://jqueryui.com/)

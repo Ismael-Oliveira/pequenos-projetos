@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <style>
+        .drop-container{
+            height: 400px;
+            padding: 20px;
+            border: 2px solid rgb(121, 114, 114);
+        }
+
+        .sortable,
+        .droppable{
+            border: 2px solid rgb(121, 114, 114);
+            /* margin: 20px; */
+            height: 330px;
+        }
+
+        .drag-container{
+            margin-top: 20px;
+            height: 155px;
+            border: 2px solid rgb(121, 114, 114);
+        }
+
+        #lixeira{
+            margin-top: 20px;
+            height: 155px;
+        }
+        .col-4{
+            border: 2px solid rgb(121, 114, 114);
+        }
+
+        .drag{
+            width: 80px;
+            height: 80px;
+            float: left;
+            margin: 4px;
+            cursor: pointer;
+            font-size: 40px;
+            text-align: center;
+            line-height: 70px;
+            font-weight: bold;
+            border: 2px solid rgb(121, 114, 114);   
+        }
+
+        .dotted{
+            border: 2px dotted red;
+        }
+
+        .ui-state-highlight{
+            background-color: rgb(212, 187, 41);
+        }
+
+        .ui-state-green{
+            background-color: rgb(178, 230, 195);
+        }
+
+    </style>
+    <title>Pequenos Projetos</title>
+</head>
+<body>
+    <h1 align="center">Projeto Drag_Drop</h1>
+    <div class="container">
+        
+        <div class="row drop-container">
+            
+            <div class="col-2 sortable ui-widget-header">
+                <P>Sortable</P>
+            </div>
+            
+            <div id="droppable" class="col-4 offset-md-6 droppable ui-widget-header">
+                <P>Droppable</P>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-6 drag-container ">
+
+                <div class="drag draggable" >1</div>
+                <div class="drag draggable" >2</div>
+                <div class="drag draggable" >3</div>
+                <div class="drag draggable" >4</div>
+                <div class="drag draggable" >5</div>
+                <div class="drag draggable" >6</div>
+            </div>
+            
+            <div id="lixeira" class="col-4 offset-md-2 " >
+                Lixeira
+            </div>
+
+        </div>
+
+    </div>
+
+    
+    <script src="./assets/js/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
